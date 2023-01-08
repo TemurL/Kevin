@@ -1,0 +1,136 @@
+html {
+    background-color: #65758C38;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+
+    background-image: url(../images/montians-back-removebg-preview.png);
+    background-repeat:repeat-x;
+    background-position: bottom;
+    background-size: 12%;
+
+}
+
+p a {
+    text-decoration: underline;
+}
+
+p a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all;
+    transition-duration: .3s;
+}
+
+a:hover {
+    color: #000;
+    letter-spacing: 4px; 
+}
+
+p {
+    text-align: center;
+    color: #606060;
+    letter-spacing: .14rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.18em;
+    position: relative;
+}
+
+img {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+span {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 0.22em;
+    color: #3a3a3a;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;
+    margin-block:5rem;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav li {
+    background: #E1F4FA;
+    border-radius: 17px;
+    padding: .2rem;
+    min-width: 7.2rem;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: #606060a7;
+    border: 1px solid #99b2b2;
+}
+
+.running-line {
+    overflow: hidden;
+}
+
+.running-line p {
+    font-size: 300%;
+    animation-duration: 19s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0.36, 1, 1);
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 90%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: -57ch;
+        width: 100%;
+    }
+
+
+}
+
+.infoblock {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 7rem;
+}
+
+.infoblock h1 {
+    margin-block: 3rem;
+    text-decoration: underline;
+}
+
+footer img {
+    width: 2rem;
+    margin: 0;
+}
+footer {
+    display: flex;
+    position: relative;
+    bottom: 4rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}

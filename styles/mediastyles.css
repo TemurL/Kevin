@@ -1,0 +1,168 @@
+@media only screen and (max-width: 1200px) {
+
+    nav ul {
+        
+        position: absolute;
+    }
+    .shop {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main {
+        display: block;
+    }
+
+    main .side-menu {
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 1096px) {
+
+    nav ul {
+        position: absolute;
+    }
+
+    header h1 {
+        margin-bottom: 8rem;
+    }
+
+    .cardsblock {
+        gap: 0; 
+        min-width: 100%;
+    }
+
+    .oneback {
+        background-size: 240%;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .cardsblock {
+        flex-direction: column;
+    }
+
+    .card {
+        min-width: 70vw;
+        max-width: 100%;
+    }
+
+    .shop {
+        grid-template-columns: 1fr;
+    }
+
+    #map-back {
+        background-size: 250%;
+    }
+
+    article {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+
+    }
+
+    .oneback {
+        background-size: 800%;
+    }
+
+    .magdatells {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header h1 {
+       margin: 0;
+    }
+
+    header nav ul {
+        margin-bottom: 2rem ;
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        min-width: 100%;
+        justify-content: space-between;
+        padding-inline: 0;
+        border-bottom: 2px solid rgb(144, 144, 144);
+    }
+
+    header nav ul > *:nth-child(1) {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    form {
+        width: 100%;
+    }
+    .form { 
+        max-width: 90%;
+    }
+
+    .gameBack {
+        width: 100%;
+    }
+    .play-zone {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+
+
+}
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+
+    .cardsblock {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .card {
+        min-width: 70vw;
+        max-width: 100%;
+    }
+
+    .login-input {
+        display: block;
+    }
+
+    form p {
+        margin-inline: 2px;
+    }
+
+    .inputblock {
+        margin-inline: 2px;
+    }
+
+    .inputblock > * {
+        width: max-content;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    form {
+        width: 28ch;
+    }
+    .form {
+        margin-top: 2rem;
+    }
+
+    
+}
+@media only screen and (max-width: 320px) {
+    
+}

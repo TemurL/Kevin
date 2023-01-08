@@ -1,0 +1,113 @@
+
+/* ============================
+js Added
+============================ */
+
+.name-sign > * {
+    text-align: center;
+}
+
+.name-sign {
+    margin-block: 5rem;
+}
+
+
+
+/* ============================
+js Added
+============================ */
+
+
+/* =========================================
+FORM
+===================== */
+
+
+form {
+    background-color: rgba(0, 0, 0, 0.821);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 57ch;
+    padding: 1rem 1.5rem 2rem;
+    font-size: 20px;
+    box-shadow: 7px 9px 20px 0px #999598;
+}
+
+.form {
+    position: relative;
+    top: 2rem;
+    background-image: url(../images/nordic-pattern2.jpg);
+    background-size: 70%;
+    border-radius: 10px;
+    width: min-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+form p {
+    letter-spacing: 3px;
+    margin-inline: 53px;
+    font-size: 24px;
+}
+
+.login-input {
+    display: flex;
+}
+
+.login-input > * {
+    flex-grow: 1;
+    width: 30%;
+    margin-inline: 55px;
+}
+
+label {
+    display: block;
+    margin-block: 1rem 5px;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #9393938c;
+    height: 20px;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 2px solid #9393938c;
+}
+
+input[name = 'login-age'] {
+    width: 13px;
+}
+
+select {
+    width: 50%;
+    height: 2rem;
+    border-radius: 5px;
+    border: 2px solid #9393938c;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 24%;
+    border-radius: 30px;
+    border: none;
+    margin-top: 35px;
+    background-color: rgb(124, 101, 242);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    transition-duration: .5s;
+}
+
+button:hover {
+    background-color: rgb(100, 85, 172);
+}

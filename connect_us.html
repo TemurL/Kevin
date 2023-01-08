@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дружить</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/fromstyle.css">
+    <link rel="stylesheet" href="./styles/mediastyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <nav>
+        <ul>
+            <li><img src="./images/deer.svg" alt="menu"></li>
+            <li class="mooving"><a href="./main.html">главная</a></li>
+            <li class="mooving"><a href="./connect_us.html">дружить</a></li>
+            <li class="mooving"><a href="./shop.html">магазин</a></li>
+            <li class="mooving"><a href="./index.html">о нас</a></li>
+        </ul>
+       </nav>
+
+       <div class="headertext">
+           <h1>Давай дружить</h1>
+       </div>
+
+
+       <div></div>
+    </header>
+
+    <div class="form">
+        <form action=""  method="post">
+
+            <div class="login-sign">
+                <p>Оставь заявку, если хочешь подружиться с Кевином и погостить в лесу</p>
+            </div>
+
+            <div class="login-input">
+
+                <div class="inputblock">
+
+                    <div>
+                        <label for="login-name">имя</label>
+                        <input type="text" name="login-name" id="login-name" autofocus>
+                    </div>
+
+                    <div>
+                        <label for="login-number">телефон</label>
+                        <input type="tel" name="login-number" id="login-number">
+                    </div>
+
+                    <div>
+                        <label for="login-gender">пол</label>
+                        <select name="login-gender" id="login-gender">
+                            <option value="male">парень</option>
+                            <option value="female">девочка</option>
+                            <option value="other">другое</option>
+                            <option value="unicorn" selected>единорог</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="inputblock">
+
+                    <div>
+
+                        <label>возраст</label>
+
+                        <label for="age-small" class="age">
+                            <input type="radio" name="login-age" id="age-small" value="0-10">0-10
+                        </label>
+                        <label for="age-medium" class="age">
+                            <input type="radio" name="login-age" id="age-medium" value="10-25" checked>10-25
+                        </label>
+                        <label for="age-large" class="age">
+                            <input type="radio" name="login-age" id="age-large" value="25-150">25-150
+                        </label>
+
+                    </div>
+                
+                    <div>
+                        <label for="login-email">почта</label>
+                        <input type="email" name="login-email" id="login-email">
+                    </div>
+
+                    <div>
+                        <label for="login-comment">комментарий</label>
+                        <textarea name="login-comment" id="login-comment" cols="25" rows="4"></textarea>
+                    </div>
+
+                </div>
+            </div>
+  
+            <div class="button"><button>дружить!</button></div>
+        
+        </form>
+    </div>
+
+    <footer>
+        <div class="footimg"><img src="./images/logo.png" alt="logo"></div>
+        <p>Темур Лакербая | Олень Кевин</p>
+    </footer>
+    <script src="./scripts/loading.js"></script>
+    <script src="./scripts/promt.js" ></script>
+</body>
+</html>
