@@ -1,0 +1,41 @@
+.container {
+    width: 60%;
+    margin-inline: auto;
+    margin-block: 5rem;
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    align-items: center;
+    /* gap: 1rem; */
+
+
+}
+
+.colorblock {
+    color:white;
+}
+
+.colorblock h1 {
+    text-align: center;
+    font-weight: 400;
+    margin-block: 2rem;
+    letter-spacing: 85px;
+    /* max-width: min-content;
+    margin-inline: auto; */
+}
+
+
+#yellow {
+    background-image: linear-gradient(90deg, #c77b0000, #c77a00, #c77b0000 )
+}
+#red {
+    background-image: linear-gradient(90deg,#78000000, #780000, #78000000)
+}
+#green {
+    background-image: linear-gradient(90deg,#004e0000, #004e00, #004e0000)
+}
+#blue {
+    background-image: linear-gradient(90deg,#02029500, #020295, #02029500)
+}

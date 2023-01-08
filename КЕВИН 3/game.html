@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Temur Lakerbaya">
+    <title>Главная</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/game.css">
+    <link rel="stylesheet" href="./styles/containerstyle.css">
+    <link rel="stylesheet" href="./styles/mediastyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+             <ul>
+                 <li><img src="./images/deer.svg" alt="menu"></li>
+                 <li class="mooving"><a href="./main.html">главная</a></li>
+                 <li class="mooving"><a href="./connect_us.html">дружить</a></li>
+                 <li class="mooving"><a href="./shop.html">магазин</a></li>
+                 <li class="mooving"><a href="./index.html">о нас</a></li>
+             </ul>
+        </nav>
+ 
+        <div class="headertext">
+            <h1>Угадай число</h1>
+        </div>
+    </header>
+
+    <div class="gameBack">
+        <div id="game">
+            <p>В эту игру Кевин часто играет с друзьями, попробуй и ты! <br>
+            Кевин загадал число от 1 до 100, у тебя есть 10 попыток, что бы угадать его. После каждого промаха, Кевин подскажет, было ли твое число больше или меньше загаданного. Если не получилось, Кевин загадает новое число</p>
+            <div class="play-zone">
+                <label for="guessField">Введи число: </label>
+                <input type="number" id="guessField" name="guessField" autofocus min="1" max="100" required>
+                <input type="button" value="Проверить" id="guessSumbit">
+            </div>
+            <p class="lastguesses"></p>
+            <h3 class="result"></h3>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footimg"><img src="./images/logo.png" alt="logo"></div>
+        <p>Темур Лакербая | Олень Кевин</p>
+    </footer>
+    <script src="./scripts/loading.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+</html>

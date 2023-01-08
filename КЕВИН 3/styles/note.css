@@ -1,0 +1,50 @@
+.note-menu {
+    position: fixed;
+    right: -300px;
+    top: 49%;
+    transition: right .7s;
+    display: flex;
+    z-index: 2;
+}
+
+.note-menu:hover {
+    right: 1rem;
+}
+
+.note-pad {
+    width: 300px;
+    height: 265px;
+}
+
+.note-menu::before {
+    content: 'заметки';
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    background-color: #95d7cc;
+    padding: 0.8rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    height: 26%;
+    min-height: min-content;
+}
+
+#notes {
+    border: none;
+    width: 105%;
+    height: 100%;
+    resize: none;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 2.5ch;
+    outline: none;
+    overflow-y:scroll;
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    box-sizing: border-box;
+}
+
+#notes:active {
+    border: none;
+}

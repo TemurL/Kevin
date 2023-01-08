@@ -1,0 +1,17 @@
+:root {
+    --pri-color: #00767a;
+}
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 3rem 0;
+    padding: 1.5rem;
+    font-size: 30px;
+}
+.about-main h1 {
+    color:  var(--pri-color);
+}

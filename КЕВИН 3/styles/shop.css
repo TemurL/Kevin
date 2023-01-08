@@ -1,0 +1,149 @@
+nav ul {
+    position: absolute;
+}
+
+h2 {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    gap: 2rem;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+
+    margin-inline-end: 1rem;
+    margin-block-start: 2rem;
+
+    letter-spacing: 1px;
+}
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 7px 9px 20px 0px #999598;
+    background-color: rgb(202 219 228);
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    border: 1px solid rgb(169, 169, 169);
+}
+
+.item-card > *:nth-child(1) {
+    height: 70%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.item-card > *:nth-child(2) {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.card-content button {
+    right: 1.5rem;
+    bottom: 25px;
+    padding: .3rem 1rem;
+
+    font-weight: 900;
+
+
+    border: 3px solid;
+    border-radius: 7px;
+    transition-property: all ;
+    transition-duration: .2s ;
+
+}
+
+.card-content button:hover {
+    background-color: rgb(75 101 107);
+    color:#92b2b1;
+}
+
+.card-content button:active {
+    background-color: rgb(28, 28, 28);
+    color:#92b2b1;
+
+}
+
+
+.item-card p {
+    margin-block: 2px;
+}
+
+/* for pictures */
+    #cone {
+        background-image: url(../images/shop/cone.jpg);
+        background-size: 100%;
+        background-position-y: -12px;
+        background-position-x: 2px;
+    }
+    #blackbarries {
+        background-image: url(../images/shop/blackbarries.jpg);
+        background-size: 100%;
+        background-position-y: -12px;
+        background-position-x: 2px;
+    }
+    #leaf {
+        background-image: url(../images/shop/leaf.jpg);
+        background-size: 100%;
+        background-position-y: -12px;
+        background-position-x: 2px;
+    }
+    #honey {
+        background-image: url(../images/shop/honey.jpg);
+        background-size: 110%;
+        background-position-y: -12px;
+        background-position-x: -22px;
+    }
+    #tea {
+        background-image: url(../images/shop/tea.jpg);
+        background-size: 110%;
+        background-position-y: -12px;
+        background-position-x: -22px;
+    }
+    #stones {
+        background-image: url(../images/shop/stones.jpg);
+        background-size: 110%;
+        background-position-y: -12px;
+        background-position-x: -22px;
+    }
+/* for pictures */
+
+
+
+
+
+
+
+
+.side-menu {
+    margin-top: 4rem;
+    border-right: 1px solid rgb(165, 165, 165);
+    padding-top: 2rem;
+    min-width: min-content;
+}
+
+.side-menu ul {
+    margin: 0;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    line-height: 25px;
+    list-style:lower-alpha;
+}
+
+h5 {
+    width: max-content;
+    margin: auto;
+    margin-block: 3rem;
+}

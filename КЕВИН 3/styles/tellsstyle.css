@@ -1,0 +1,147 @@
+/* =========================================
+TELLS CARDS
+===================== */
+
+
+.magda {
+    margin-bottom: 3rem;
+}
+
+.magdatells {
+    width: 70%;
+    margin: auto;
+    margin-block: 3rem;
+    color:white;
+    box-shadow: 7px 9px 20px 0px #999598;
+    background-image: linear-gradient(90deg, rgb(20, 21, 39), rgb(30, 36, 159));
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    line-height: 1.5rem;
+}
+
+.magdatells:hover {
+    animation-name: vibrating;
+    animation-duration: .4s;
+    animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);    position: relative;
+    rotate: 0deg;
+}
+
+
+/*_________________
+ANIMATION */
+
+@keyframes vibrating {
+    
+    from {
+        left: 0px;
+    }
+
+    30% {
+        left: 10px;
+    }
+
+    60% {
+        left: -10px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+/*_________________
+ANIMATION */
+
+
+h2 {
+    text-align: center;
+    margin-block: 3rem;
+}
+
+
+/* =========================================
+FLOATING-CARD
+===================== */
+
+.backimage {
+    background-image: url('../images/olen.jpg');
+    box-shadow: 7px 9px 20px 0px #999598;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.imageback {
+    width: 500px;
+    height: 500px;
+    background-color:rgba(0, 0, 0, 0.655);
+    border-radius: 20px;
+    margin: auto;
+
+    color: white;
+}
+
+.imageback > * {
+    padding: 2rem;
+    font-size: 25px;
+}
+
+.imageback ul {
+    padding-left: 100px;
+    margin-top: 0;
+    
+}
+
+.imageback p {
+    padding-block: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.backimage {
+    animation-duration: 3s;
+    animation-name: floating;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+
+/*_________________
+ANIMATION */
+
+@keyframes floating {
+    from {
+        right: 100px;
+    }
+    to {
+        right: 100px;
+    }
+    50% {
+        right: -100px;
+    }
+}
+
+/*_________________
+ANIMATION */
+
+
+/* =========================================
+MEDIA
+===================== */
+
+@media only screen and (max-width: 768px) {
+    .backimage {
+        animation-name: none;
+        position: static;
+        max-width:100% ;
+    }
+
+
+    .imageback {
+        position: static;
+        max-width:100% ;
+
+    }
+}

@@ -1,0 +1,548 @@
+html {
+    background-color: #65758C38;
+    background-image: url(../images/montians-back-removebg-preview.png);
+    background-repeat:repeat-x;
+    background-position: bottom;
+    background-size: 12%;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    letter-spacing: .23rem;
+    margin-bottom: 0;
+    /* transition: all;
+    transition-duration: 1s; */
+}
+
+body {
+    margin: 1.5rem;
+}
+
+/* =========================================
+HEADER
+===================== */
+
+
+header {
+    margin-bottom: 2rem;
+}
+
+
+
+header h1 {
+    max-width: max-content;
+    margin: auto;
+    margin-bottom: 3rem;   
+    color: #ffffff;
+    background-color: #797979db;
+    border-radius: 10px;
+    padding: .5rem 3rem;
+    font-weight: 400; 
+       
+}
+
+.headertext {
+    width: max-content;
+    margin: auto;
+    background-image: url(../images/nordic-pattern.jpg);
+    background-size: 60%;
+    background-position-y: 45px;
+    background-position-x: 50px;
+    border-radius: 10px;
+    box-shadow: 15px 8px 37px -15px #211f1fcc;}
+
+nav ul {
+    position: absolute;
+    list-style:none;
+    line-height: 2rem;
+    padding-right: 20px;
+    padding-left: 1rem;
+}
+
+nav ul > .mooving:hover {
+    /* animation-name: hoverslide;
+    animation-duration: .35s; */
+    padding-left: 20px;
+}
+nav ul > .mooving {
+    /* animation-name: hoverBackslide;
+    animation-duration: .3s; */
+    padding-left: 0px;
+    transition-duration: .3s;
+}
+
+
+/* ____________________
+ANIMATION */
+/* 
+@keyframes hoverBackslide {
+    from {
+        padding-left: 20px;
+    }
+
+    to {
+        padding-left: 0px;
+    }
+}
+
+@keyframes hoverslide {
+    from {
+        padding-left: 0px;
+    }
+
+    to {
+        padding-left: 20px;
+    }
+} */
+
+/* ____________________
+ANIMATION */
+
+
+nav ul li img {
+    position: relative;
+    left: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================
+CARDBLOCK
+===================== */
+
+.cardsblockbox {
+    display: flex;
+    justify-content: center;
+}
+
+.cardsblock {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    min-width: 95ch;
+}
+
+.card {
+    flex: 1;
+    flex-shrink: 1;
+    flex-basis: 15%;
+    background-image: linear-gradient(180deg, #bec1c5, #bec1c500);
+    padding: 0.5rem 1rem 1rem;
+    border-radius: 50px 8px;
+    margin: 1rem;
+    min-width: max-content;
+    max-width: 30%;
+    animation-name: backFillout;
+    animation-duration: .4s;
+}
+
+.card:hover {
+    background-image: linear-gradient(180deg, #bec1c5, #bec1c5);
+    animation-name: backFillin;
+    animation-duration: .1s;
+}
+
+
+/* ____________________
+ANIMATION */
+
+@keyframes backFillin {
+    from {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c500);
+    }
+    to {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c5);
+    }
+
+    10% {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c521);
+
+    }
+    20% {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c53f);
+
+    }
+    30% {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c548);
+
+    }
+    40% {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c565);
+
+    }
+    50% {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c577);
+
+    }
+    60% {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c594);
+
+    }
+    70% {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c5a8);
+
+    }
+    80% {
+        background-image: linear-gradient(102deg, #bec1c5, #bec1c5c8);
+
+    }
+    90% {
+        background-image: linear-gradient(93deg, #bec1c5, #bec1c5eb);
+
+    }
+}
+
+@keyframes backFillout {
+    from {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c5);
+
+    }
+    to {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c500);
+    }
+
+    90% {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c521);
+
+    }
+    80% {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c53f);
+
+    }
+    70% {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c548);
+
+    }
+    60% {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c565);
+
+    }
+    50% {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c577);
+
+    }
+    40% {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c594);
+
+    }
+    30% {
+        background-image: linear-gradient(180deg, #bec1c5, #bec1c5a8);
+
+    }
+    20% {
+        background-image: linear-gradient(102deg, #bec1c5, #bec1c5c8);
+
+    }
+    10% {
+        background-image: linear-gradient(93deg, #bec1c5, #bec1c5eb);
+
+    }
+}
+
+/* ____________________
+ANIMATION */
+
+#hammer {
+    order: -1;
+}
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-head img {
+    width: 2rem;
+}
+
+span {
+    letter-spacing: .5rem;
+    margin: 1rem 0;
+}
+
+div ul {
+    line-height: 2.5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+
+/* =========================================
+SUBTITLE + FRIENDBLOCK
+===================== */
+
+
+.oneback {
+    background-image: url(../images/forestback.jpg);
+    background-size: 150%;
+    box-shadow: 7px 9px 20px 0px #999598;
+    border-radius: 30px;
+}
+
+.subtittle {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.subtittle, .friendsblockbox {
+    background-color: #00000062;
+}
+
+h4 {
+    text-align: center;
+    max-width: 80ch;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.friendsblockbox {
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.friendsblock {
+    width: 100ch;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 2rem 3rem; 
+}
+
+.friend {
+    background-color: #ffffffa1;
+    border-radius: 8px;
+    border: 1px solid rgb(141, 141, 141);
+    min-height: 10ch;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: inherit;
+}
+
+.friendhead {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 1rem;
+}
+
+.friendhead img {
+    width: 2em;
+}
+
+.friendtext {
+    max-width: 70ch;
+    padding-left: 1rem;
+    color: #222222;
+}
+
+.a1 p {
+    text-align: end;
+    padding: 0 1rem 0 0;
+}
+
+hr {
+    width: 50%;
+    margin-block: 4rem 2rem;
+}
+
+
+/* =========================================
+MOOVING TEXT
+===================== */
+
+
+.running-line {
+    overflow: hidden;
+   
+}
+
+.running-line p {
+    min-width: max-content;
+    font-size: 300%;
+    animation-duration: 40s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0.36, 1, 1);
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 200%;
+    }
+
+    to {
+        margin-left: -147ch;
+        width: 200%;
+    }
+
+} 
+
+
+/* =========================================
+MAP-SECTION
+===================== */
+
+
+#map-back {
+    border-radius: 30px;
+    background-image: url(../images/shop/leaf.jpg);
+    background-size: 100%;
+    box-shadow: 7px 9px 20px 0px #999598;
+
+}
+
+article {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 21px;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 3rem;
+    border-radius: 30px;
+    background-color: #000000d1;
+    margin-block: 1rem;
+}
+
+
+
+iframe {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 60ch;
+}
+
+article span {
+    font-weight: 800;
+    letter-spacing: normal;
+    color: #6ba1c2;
+}
+
+article h3 {
+    margin-top: .5rem;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.big-inline-blocks {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.big-inline-blocks > * {
+    flex: 1;
+}
+
+article.game {
+    background-color: #19296dd2;
+}
+article.shop {
+    background-color: #89276ed2;
+}
+article.friending {
+    background-color: #5ba76c;
+}
+article.about {
+    background-color: #877e40;
+}
+
+.button-link {
+    width: min-content;
+    margin-block: 3rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    background-color: rgb(60 155 126 / 78%);
+    color: white;
+    padding: 1.5rem;
+    box-shadow: 8px 11px 37px 0px #211f1fcc;
+    letter-spacing: 5px;
+    transition-duration: .2s;
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: rgba(51, 105, 99, 0.584);
+}
+
+
+/* =========================================
+FOOTER
+===================== */
+
+
+footer {
+    margin-bottom: 5rem;
+}
+
+footer p {
+    position: relative;
+    bottom: 1.2rem;
+    text-align: center;
+    color: #000000;
+}
+
+.footimg {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer img {
+    width: 7rem;
+    margin-block-start: 1rem;
+}
+
+
+/* =========================================
+loading
+===================== */
+
+.animationLoader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0; 
+    bottom: 0; 
+    overflow: hidden; 
+    background: rgb(255, 255, 255);
+    z-index: 1001; 
+    transition-duration: .45s;
+    transition-property: all;
+}
+  
+.animationLoader__image {
+    position: relative;
+    top: 35%;  
+    left: 45%;  
+    width: 10vw;  
+    height: 10vw;  
+    /* margin-top: -50px;  
+    margin-left: -50px;   */
+    margin-right: 50%;
+    background-image: url(../images/media/rain.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.animation_hiding .animationLoader {
+    opacity: 0;
+}
+ 
+.animation .animationLoader {
+    display: none;
+}
+/* =========================================
+loading
+===================== */
+
