@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kemix</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/note.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/mobile-menu.css">
+    <link rel="stylesheet" href="./styles/profile.css">
+    <link rel="stylesheet" href="./styles/media.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex;" id="logo">
+            <img src="./img/sand-clock.png" class="logo" alt="Kemix-logo" >
+            <a href="./index.html">
+                <h1>Kemix</h1>
+            </a>
+        </div>
+        <div class="serch">
+            <label for="serch">Serch:</label>
+            <input type="text" name="serch" id="serch" placeholder="do not work yet">
+        </div>
+        <ul class="nav-list">
+            <a href="./index.html">
+                <li>HOME</li>
+            </a>
+            <a href="./profile.html">
+                <li>PROFILE</li>
+            </a>
+            <a href="./about.html">
+                <li>ABOUT US</li>
+            </a>
+        </ul>
+        <img src="./img/menu.png" class="menu-icon" alt="">
+    </header>
+    <div class="note-menu">
+        <div class="note-pad">
+            <textarea name="notes" id="notes" cols="30" rows="10" placeholder="This is some space for some things"></textarea>
+        </div>
+    </div>
+
+    <main>
+        <ul class="play-list"></ul>
+    </main>
+
+    <footer>
+        <h3>Kemix делается с любовью мной, и пока что я много всего еще не сделал, но что я успел сделать, так это другой сайт
+            про своего хорошего друга <a href="../index.html">Оленя Кевина</a>
+        </h3>
+    </footer>
+    <script src="./scripts/notes.js"></script>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/profile.js"></script>
+    <script src="./scripts/delBtn.js"></script>
+    <script src="./scripts/delOne.js"></script>
+</body>
+</html>
