@@ -37,6 +37,13 @@
     }
 
 }
+
+@media only screen and (min-width: 1096px) {
+    .animationLoader__image {
+        width: 150px;
+        left: calc((100vw - 150px) / 2);
+    }
+}
 @media only screen and (max-width: 768px) {
     .cardsblock {
         flex-direction: column;
