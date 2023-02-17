@@ -24,7 +24,7 @@ menuIcon.onclick = () => {
         console.log(mobileMenuDiv.style)
 
         setTimeout(() => {
-            mobileMenuDiv.style.top = '80px'
+            mobileMenuDiv.style.top = '65px'
         }, 100)
     } else {
         const body = document.querySelector('body')
