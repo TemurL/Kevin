@@ -524,12 +524,12 @@ loading
 .animationLoader__image {
     position: relative;
     top: 30vh;  
-    left: 40vw;  
-    width: 20vh;  
+    left: 30vw;  
+    width: 40vw;  
     aspect-ratio: 1/1;
     /* margin-top: -50px;  
     margin-left: -50px;   */
-    margin-right: 50%;
+    /* margin-right: 50%; */
     background-image: url(../images/media/rain.gif);
     background-repeat: no-repeat;
     background-size: 100%;
