@@ -1,7 +1,7 @@
 const menuIcon = document.querySelector('.menu-icon')
 const noteMenu = document.querySelector('.note-menu')
 const mobileMenuHTML = `
-    <div class="mobile-menu" style="top: -145px; position: absolute;">
+    <div class="mobile-menu" style="top: -145px; position: fixed;">
         <ul>
             <a href="./index.html">
                 <li>HOME</li>
