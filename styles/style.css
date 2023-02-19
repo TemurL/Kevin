@@ -3,7 +3,7 @@ html {
     background-image: url(../images/montians-back-removebg-preview.png);
     background-repeat:repeat-x;
     background-position: bottom;
-    background-size: 12%;
+    background-size: 15%;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
@@ -258,6 +258,7 @@ ANIMATION */
 
 .card-head img {
     width: 2rem;
+    margin-left: 10px;
 }
 
 span {
