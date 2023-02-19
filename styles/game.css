@@ -79,3 +79,12 @@ label {
 }
 
 
+
+/* ================================
+PONG
+=================== */
+
+canvas {
+    margin: 2rem;
+    background-color: black;
+}
