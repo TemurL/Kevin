@@ -71,12 +71,17 @@ function render() {
     drawCircle(ball.x, ball.y, ball.radius, ball.color)
 }
 
-// drawRect(user.x, user.y, user.width, user.height, user.color)
-// drawRect(com.x, com.y, com.width, com.height, com.color)
-// drawCircle(ball.x, ball.y, ball.radius, ball.color)
-// drawNet()
-// drawText(user.score, canvas.width/4, canvas.height/5, 'white')
-// drawText(com.score, 3*canvas.width/4, canvas.height/5, 'white')
+// ============================
+// проверка отрисовки
+
+drawRect(user.x, user.y, user.width, user.height, user.color)
+drawRect(com.x, com.y, com.width, com.height, com.color)
+drawCircle(ball.x, ball.y, ball.radius, ball.color)
+drawNet()
+drawText(user.score, canvas.width/4, canvas.height/5, 'white')
+drawText(com.score, 3*canvas.width/4, canvas.height/5, 'white')
+
+// =======================
 
 function game() {
     update()
