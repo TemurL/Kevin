@@ -1,8 +1,6 @@
 const canvas = document.getElementById('pong')
 const context = canvas.getContext('2d');
 
-// context.fillStyle = 'black';
-// context.fillRect(100, 200, 50, 75);
 
 function drawRect(x, y, w, h, color) {
     context.fillStyle = color;
@@ -32,7 +30,7 @@ const user = {
     color: 'white'
 }
 const com = {
-    x: 590,
+    x: canvas.width - 10,
     y: canvas.height/2 - 100/2, 
     width: 10,
     height: 100,
@@ -53,7 +51,7 @@ const ball = {
     radius: 10,
     color: 'white',
     speed: 5,
-    veloX: 5,
+    veloX: -5,
     veloY: 5
 }
 
@@ -66,7 +64,7 @@ function drawNet(){
 
 function render() {
     drawRect(0,0,canvas.width,canvas.height, '#125070')
-    drawText(user.score, canvas.width/4, canvas.height/5, 'white');
+    drawText(user.score, canvas.width/4 * 0.9, canvas.height/5, 'white');
     drawText(com.score, 3*canvas.width/4, canvas.height/5, 'white');
     drawNet();
     drawRect(user.x, user.y, user.width, user.height, user.color);
@@ -118,16 +116,16 @@ function update() {
     let player = (ball.x < canvas.width/2) ? user : com;
 
     if (collision(ball, player)) {
-        let collidePoint = (ball.y - (player.y + player.height/2));
+         let collidePoint = (ball.y - (player.y + player.height/2));
         collidePoint = collidePoint / (player.height/2);
         let angleRad = (Math.PI/4) * collidePoint;
     
         let direction = (ball.x < canvas.width/2) ? 1 : -1
     
         ball.veloX =  direction * ball.speed * Math.cos(angleRad)
-        ball.veloY =  direction * ball.speed * Math.sin(angleRad)
+        ball.veloY =  ball.speed * Math.sin(angleRad)
     
-        ball.speed += 0.6;
+        ball.speed += 0.5;
     }
 
     if (ball.x - ball.radius < 0) {
@@ -146,6 +144,16 @@ function game() {
     render()
 }
 
-const framePerSec = 50;
-setInterval(game, 1000/framePerSec);
+const framePerSec = 60;
 
+drawText(user.score, canvas.width/4 * 0.9, canvas.height/5, 'white');
+drawText(com.score, 3*canvas.width/4, canvas.height/5, 'white');
+drawNet();
+drawRect(user.x, user.y, user.width, user.height, user.color);
+drawRect(com.x, com.y, com.width, com.height, com.color);
+drawCircle(ball.x, ball.y, ball.radius, ball.color)
+
+
+setTimeout(() => {
+    setInterval(game, 1000/framePerSec)
+}, 3000)
