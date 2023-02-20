@@ -51,18 +51,21 @@ const ball = {
     x: canvas.width/2,
     y: canvas.height/2,
     radius: 10,
-    color: 'white'
+    color: 'white',
+    speed: 5,
+    veloX: 5,
+    veloY: 5
 }
 
 function drawNet(){
     for(let i = 0; i <= canvas.height; i += 15) {
         drawRect(net.x, net.y + i, net.width, net.height, net.color);
-        console.log(i)
     }
 }
 
 
 function render() {
+    drawRect(0,0,canvas.width,canvas.height, '#125070')
     drawText(user.score, canvas.width/4, canvas.height/5, 'white');
     drawText(com.score, 3*canvas.width/4, canvas.height/5, 'white');
     drawNet();
@@ -71,17 +74,72 @@ function render() {
     drawCircle(ball.x, ball.y, ball.radius, ball.color)
 }
 
-// ============================
-// проверка отрисовки
 
-drawRect(user.x, user.y, user.width, user.height, user.color)
-drawRect(com.x, com.y, com.width, com.height, com.color)
-drawCircle(ball.x, ball.y, ball.radius, ball.color)
-drawNet()
-drawText(user.score, canvas.width/4, canvas.height/5, 'white')
-drawText(com.score, 3*canvas.width/4, canvas.height/5, 'white')
 
-// =======================
+canvas.addEventListener('mousemove', movePaddle);
+
+function movePaddle(evt) {
+    let rect = canvas.getBoundingClientRect();
+    user.y = evt.clientY - rect.top - user.height/2
+}
+
+
+function collision(b, p) {
+    p.top = p.y;
+    p.bottom = p.y + p.height;
+    p.left = p.x;
+    p.right = p.x + p.width;
+
+    b.top = b.y - b.radius;
+    b.bottom = b.y + b.radius;
+    b.left = b.x - b.radius;
+    b.right = b.x + b.radius;
+    return b.right > p.left && b.top < p.bottom && b.left < p.right && b.bottom > p.top 
+}
+
+function resetBall() {
+    ball.x = canvas.width/2;
+    ball.y = canvas.height/2;
+    ball.speed = 5;
+    ball.veloX = -ball.veloX
+}
+
+function update() {
+    ball.x += ball.veloX;
+    ball.y += ball.veloY;
+
+    let comLevel = 0.05;
+
+    com.y += (ball.y - (com.y + com.height/2)) * comLevel;
+
+    if(ball.y + ball.radius > canvas.height || ball.y - ball.radius < 0) {
+        ball.veloY = - ball.veloY
+    }
+    let player = (ball.x < canvas.width/2) ? user : com;
+
+    if (collision(ball, player)) {
+        let collidePoint = (ball.y - (player.y + player.height/2));
+        collidePoint = collidePoint / (player.height/2);
+        let angleRad = (Math.PI/4) * collidePoint;
+    
+        let direction = (ball.x < canvas.width/2) ? 1 : -1
+    
+        ball.veloX =  direction * ball.speed * Math.cos(angleRad)
+        ball.veloY =  direction * ball.speed * Math.sin(angleRad)
+    
+        ball.speed += 0.6;
+    }
+
+    if (ball.x - ball.radius < 0) {
+        com.score++;
+        resetBall();
+    } else if (ball.x + ball.radius > canvas.width) {
+        user.score++; 
+        resetBall();
+    }
+    
+
+}
 
 function game() {
     update()
@@ -89,4 +147,5 @@ function game() {
 }
 
 const framePerSec = 50;
+setInterval(game, 1000/framePerSec);
 
