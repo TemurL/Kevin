@@ -85,6 +85,8 @@ PONG
 =================== */
 
 canvas {
-    margin: 2rem;
+    margin-top: 2rem;
+    display: block;
+    margin-inline: auto;
     background-color: black;
 }
