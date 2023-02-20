@@ -106,7 +106,7 @@ function update() {
     ball.x += ball.veloX;
     ball.y += ball.veloY;
 
-    let comLevel = 0.05;
+    let comLevel = 0.1;
 
     com.y += (ball.y - (com.y + com.height/2)) * comLevel;
 
@@ -125,7 +125,7 @@ function update() {
         ball.veloX =  direction * ball.speed * Math.cos(angleRad)
         ball.veloY =  ball.speed * Math.sin(angleRad)
     
-        ball.speed += 0.5;
+        ball.speed += 0.2;
     }
 
     if (ball.x - ball.radius < 0) {
