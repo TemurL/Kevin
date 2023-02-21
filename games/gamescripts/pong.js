@@ -70,6 +70,7 @@ function render() {
     drawRect(user.x, user.y, user.width, user.height, user.color);
     drawRect(com.x, com.y, com.width, com.height, com.color);
     drawCircle(ball.x, ball.y, ball.radius, ball.color)
+    console.log('frame')
 }
 
 
@@ -106,7 +107,7 @@ function update() {
     ball.x += ball.veloX;
     ball.y += ball.veloY;
 
-    let comLevel = 0.1;
+    let comLevel = 0.065;
 
     com.y += (ball.y - (com.y + com.height/2)) * comLevel;
 
