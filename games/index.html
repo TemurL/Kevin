@@ -8,8 +8,8 @@
     <title>Главная</title>
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/game.css">
     <link rel="stylesheet" href="../styles/containerstyle.css">
+    <link rel="stylesheet" href="./gameStyle.css">
     <link rel="stylesheet" href="../styles/mediastyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,11 +28,26 @@
         </nav>
  
         <div class="headertext">
-            <h1>Пинг-Понг</h1>
+            <h1>Игры</h1>
         </div>
     </header>
 
-    <canvas width="800px" height="550px" id="pong"></canvas>
+    <div class="gamelist">
+        <section class="gamecard" id="guessTheNumber">
+            <div class="gInfo">
+                <h2>Угадай число</h2>
+                <p>Легкая, но любимая</p>
+            </div>
+            <button class="gameLink"><a href="../game.html">Играть!</a></button>
+        </section>
+        <section class="gamecard" id="pingPong">
+            <div class="gInfo">
+                <h2>Пинг-Понг</h2>
+                <p>Схватка в одну из самых старых компьютерных игр</p>
+            </div>
+            <button class="gameLink"><a href="./game1.html">Играть!</a></button>
+        </section>
+    </div>
     
 
 
