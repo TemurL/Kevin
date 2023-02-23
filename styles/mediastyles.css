@@ -124,6 +124,11 @@
     }
 
 
+    canvas {
+        width: 90vw;
+        height: 50vh;
+    }
+
 
 }
 @media only screen and (max-width: 480px) {

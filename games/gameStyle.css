@@ -1,0 +1,54 @@
+.gamelist {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-inline: 10vw;
+    margin-block: 3rem;
+}
+
+.gamecard {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+#guessTheNumber {
+    background-color: #19296dd2;
+}
+
+#pingPong {
+    background-color: #89276ed2;
+}
+
+.gamecard button {
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    background-color: rgb(60 155 126 / 78%);
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 8px 11px 37px 0px #211f1fcc;
+    letter-spacing: 5px;
+    transition-duration: .2s;
+    text-align: center;
+}
+
+.gamecard button:hover {
+    background-color: rgba(51, 105, 99, 0.584);
+}
+
+@media only screen and (max-width: 1096px) {
+    .gamelist {
+        grid-template-columns: 1fr;
+        padding-inline: 0px;
+    }
+
+    .gamecard {
+        flex-direction: column;
+    }
+}

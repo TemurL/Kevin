@@ -79,3 +79,17 @@ label {
 }
 
 
+
+/* ================================
+PONG
+=================== */
+
+canvas {
+    margin-top: 2rem;
+    display: block;
+    margin-inline: auto;
+    background-color: #125070;
+    border-radius: 10px;
+    border: 5px solid white;
+    box-shadow: 3px 4px 12px 4px #26405085;
+}

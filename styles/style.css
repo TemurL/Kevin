@@ -281,7 +281,7 @@ SUBTITLE + FRIENDBLOCK
 
 .oneback {
     background-image: url(../images/forestback.jpg);
-    background-size: 150%;
+    background-size: cover;
     box-shadow: 7px 9px 20px 0px #999598;
     border-radius: 30px;
 }
