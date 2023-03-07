@@ -407,6 +407,7 @@ MAP-SECTION
     background-image: url(../images/shop/leaf.jpg);
     background-size: 100%;
     box-shadow: 7px 9px 20px 0px #999598;
+    margin: 1rem;
 
 }
 
@@ -420,10 +421,12 @@ article {
     padding: 3rem;
     border-radius: 30px;
     background-color: #000000d1;
-    margin-block: 1rem;
+    margin: 1rem;
 }
 
-
+#map-back > article {
+    margin-inline: 0;
+}
 
 iframe {
     border-radius: 15px;
@@ -445,7 +448,6 @@ article h3 {
 
 .big-inline-blocks {
     display: flex;
-    gap: 2rem;
     flex-wrap: wrap;
 }
 
