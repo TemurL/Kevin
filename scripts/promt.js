@@ -1,6 +1,5 @@
 const form = document.querySelector('form')
 const header = document.querySelector('header')
-const body = document.querySelector('body')
 const newDiv = document.createElement('div')
 newDiv.classList = 'name-sign'
 
@@ -20,12 +19,7 @@ form.onclick = () => {
             <p>Теперь вы с Кевином друзья! А когда сайт будет работать лучше, ты сможеь прийти и погостить в наш лес!</p>
         `
     }
-    const newH2 = document.querySelector('h2')
-    const newP = document.querySelector('p')
-
-    console.log(newH2)
-    console.log(newP)
-
+    
     header.insertAdjacentElement("afterend", newDiv)
 
 }
