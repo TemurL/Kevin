@@ -280,6 +280,8 @@ SUBTITLE + FRIENDBLOCK
 
 
 .oneback {
+    background-blend-mode: multiply;
+    background-color: #00000062;
     background-image: url(../images/forestback.jpg);
     background-size: cover;
     box-shadow: 7px 9px 20px 0px #999598;
@@ -294,9 +296,6 @@ SUBTITLE + FRIENDBLOCK
     border-top-right-radius: 30px;
 }
 
-.subtittle, .friendsblockbox {
-    background-color: #00000062;
-}
 
 h4 {
     text-align: center;
