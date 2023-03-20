@@ -126,7 +126,7 @@ function update() {
     let player = (ball.x < canvas.width/2) ? user : com;
 
     if (collision(ball, player)) {
-         let collidePoint = (ball.y - (player.y + player.height/2));
+        let collidePoint = (ball.y - (player.y + player.height/2));
         collidePoint = collidePoint / (player.height/2);
         let angleRad = (Math.PI/4) * collidePoint;
     
