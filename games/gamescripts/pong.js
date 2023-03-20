@@ -69,7 +69,8 @@ function render() {
     drawNet();
     drawRect(user.x, user.y, user.width, user.height, user.color);
     drawRect(com.x, com.y, com.width, com.height, com.color);
-    drawCircle(ball.x, ball.y, ball.radius, ball.color)
+    drawCircle(ball.x, ball.y, ball.radius, ball.color);
+    gameOver();
 }
 
 
@@ -100,6 +101,15 @@ function resetBall() {
     ball.y = canvas.height/2;
     ball.speed = 5;
     ball.veloX = -ball.veloX
+}
+
+function gameOver() {
+    if (com.score === 5 || user.score === 5) {
+        resetBall();
+        ball.veloX = 0;
+        ball.veloY = 0;
+        drawText('game over', canvas.width/4.8, canvas.height/1.5, 'white')
+    }
 }
 
 function update() {
